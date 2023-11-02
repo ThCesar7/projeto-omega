@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="menu" [ngClass]="{'menu-hidden': isMenuHidden}">
+    <omega-menu></omega-menu>
+  </div>
+
+  <div class="header" [ngClass]="{'header-hidden': isMenuHidden}">
+    <button mat-raised-button class="burguer" (click)="evento()"><i class="fa-solid fa-bars"></i></button>
+
+    <header></header>
+  </div>
+
+</div>
+
+<div class="dashboard" [ngClass]="{'dashboard-hidden': isMenuHidden}">
+  <conteudo class="conteudo" [ngClass]="{'conteudo-hidden': isMenuHidden}"></conteudo>
+  <img class="fundo" src="./assets/img/fundo.jpg">
+</div>

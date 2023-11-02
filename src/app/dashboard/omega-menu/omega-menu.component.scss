@@ -1,0 +1,180 @@
+.menu{
+  background: linear-gradient(to bottom, #616161fa, rgb(0 0 0)) rgb(255, 255, 255);
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  z-index: 2;
+  box-shadow: 3px 3px 5px;
+}
+
+.menuContent{
+  display: block;
+  top: 130px;
+  position: relative;
+}
+
+:host ::ng-deep .p-panelmenu .p-panelmenu-header:hover{
+  background: white;
+
+  a {
+    color: black !important;
+  }
+
+  svg {
+    color: black !important;
+  }
+}
+
+:host ::ng-deep .p-panelmenu .p-panelmenu-header:focus{
+  background: white;
+
+  a {
+    color: black !important;
+  }
+
+  svg {
+    color: black !important;
+  }
+}
+
+:host ::ng-deep .p-panelmenu .p-panelmenu-header .p-panelmenu-header-content {
+  border: 1px solid rgb(255 255 255 / 22%) !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  transition: box-shadow 0.2s;
+  padding: 10px 5px;
+
+  svg {
+  position: relative;
+  color: #ffffff;
+  left: 228px;
+  }
+}
+
+:host ::ng-deep .p-panelmenu a {
+  color: #ffffff !important;
+}
+
+:host ::ng-deep .p-menuitem-icon {
+  margin: 0px 10px 0px 1px;
+  font-size: 1rem !important;
+}
+
+:host ::ng-deep  .p-panelmenu .p-panelmenu-content .p-menuitem > .p-menuitem-content  {
+
+  .p-menuitem-link{
+    width: 222px !important;
+  }
+
+  svg{
+    position: relative;
+    color: #ffffff;
+    left: 210px;
+  }
+}
+
+:host ::ng-deep .p-panelmenu .p-submenu-icon{
+  margin: -6px !important;
+}
+
+:host ::ng-deep .p-panelmenu .p-panelmenu-content .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-icon {
+  color: #ffffff;
+}
+
+:host ::ng-deep .p-panelmenu .p-panelmenu-content .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text {
+  color: #ffffff !important;
+}
+
+:host ::ng-deep .p-panelmenu .p-panelmenu-content {
+  background: transparent !important;
+  border-radius: 0 !important;
+  border: 1px solid rgb(255 255 255 / 22%) !important;
+  padding: 5px 5px 5px 10px !important;
+}
+
+:host ::ng-deep .p-panelmenu .p-panelmenu-content .p-menuitem > .p-menuitem-content {
+  padding: 5px 0px 0px 5px !important;
+}
+
+:host ::ng-deep  .p-panelmenu .p-panelmenu-content .p-menuitem:not(.p-highlight):not(.p-disabled) > .p-menuitem-content:hover {
+  background: white !important;
+  border-radius: 14px;
+
+  .p-menuitem-link .p-menuitem-icon {
+    color: black !important;
+  }
+
+  .p-menuitem-link .p-menuitem-text {
+    color: black !important;
+  }
+
+  svg {
+    color: black !important;
+  }
+}
+
+:host ::ng-deep .p-panelmenu .p-panelmenu-content .p-menuitem:not(.p-highlight):not(.p-disabled).p-focus > .p-menuitem-content {
+  background: white !important;
+  border-radius: 14px;
+
+  .p-menuitem-link .p-menuitem-icon {
+    color: black !important;
+  }
+
+  .p-menuitem-link .p-menuitem-text {
+    color: black !important;
+  }
+
+  svg {
+    color: black !important;
+  }
+}
+
+.icone{
+  top: 40px;
+  font-size: 4rem;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.texto{
+  font-size: 1rem;
+  top: 15px;
+  position: relative;
+  color: white;
+}
+
+.gear{
+  left: 5px;
+  position: relative;
+}
+
+span{
+  color: #0E5B85;
+}
+
+.botao{
+  background: none;
+  color: white;
+  border: none;
+}
+
+::ng-deep .mat-elevation-z8, .mat-mdc-elevation-specific.mat-elevation-z8{
+  background: #525252 !important;
+  border-radius: 14px !important;
+  padding: 5px;
+
+  span{
+    color: white;
+  }
+
+  .mat-mdc-menu-item:not([disabled]):hover{
+    background-color: white;
+    border-radius: 25px !important;
+
+    span{
+      color: black;
+    }
+  }
+}

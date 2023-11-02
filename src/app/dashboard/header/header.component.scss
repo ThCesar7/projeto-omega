@@ -1,0 +1,33 @@
+mat-toolbar{
+  background: linear-gradient(to right, #0E5B85, rgb(17 38 118)) rgb(255 255 255);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.icone{
+  top: 11px;
+  font-size: 3rem;
+  position: relative;
+}
+
+.saldo{
+  position: relative;
+  right: 50px;
+  top: 5px;
+}
+
+.valor{
+  position: relative;
+  top: -15px;
+  font-size: 0.8rem;
+}
+
+.olho{
+  position: relative;
+  top: -4px;
+  left: 20px;
+  font-size: 0.8rem;
+}
+

@@ -1,0 +1,66 @@
+.card{
+  margin: 5px 5px 5px 5px;
+  width: 300px;
+  box-shadow: 0px 0px 2px;
+}
+
+.cardChart{
+  top: 20px;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0px 0px 2px;
+}
+
+.box{
+  width: 40px;
+  height: 50px;
+  background: #20d077;
+  border-radius: 6px;
+  color: white;
+  padding: 15px 0 0 4px;
+  font-size: 2rem;
+}
+
+.box2{
+  width: 60px;
+  height: 50px;
+  background: #f9c851;
+  border-radius: 6px;
+  color: white;
+  padding: 15px 0 0 4px;
+  font-size: 2rem;
+}
+
+.box3{
+  width: 130px;
+  height: 50px;
+  background: #007be5;
+  border-radius: 6px;
+  color: white;
+  padding: 15px 0 0 4px;
+  font-size: 2rem;
+}
+
+.conteudo{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.texto{
+  font-size: 2rem;
+  top: 15px;
+  position: relative;
+}
+
+@media (min-width: 412px) and (max-width: 767px) {
+  .card{
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card{
+    width: 100%;
+  }
+}

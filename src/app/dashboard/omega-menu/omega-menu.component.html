@@ -1,0 +1,25 @@
+<div class="menu">
+  <div class="icone">
+    <i class="fa-solid fa-circle-user"></i>
+    <div class="espacamento2">
+      <span class="texto">Configurações</span>
+      <div class="texto gear">
+        <button class="botao" [matMenuTriggerFor]="menu2">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+        <mat-menu #menu2="matMenu" class="matMenu">
+          <button mat-menu-item>Alterar Senha</button>
+          <button mat-menu-item [routerLink]="['/login']">Logout</button>
+        </mat-menu>
+      </div>
+    </div>
+  </div>
+
+  <div class="menuContent">
+    <p-panelMenu [model]="items"></p-panelMenu>
+  </div>
+</div>
+
+<div class="cardContent">
+  <ng-content></ng-content>
+</div>
