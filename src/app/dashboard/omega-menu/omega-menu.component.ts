@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
+import { LoginService } from 'src/app/login/login.service';
 
 @Component({
   selector: 'omega-menu',
@@ -9,6 +10,10 @@ import { MenuItem } from 'primeng/api';
 export class OmegaMenuComponent implements OnInit {
   items!: MenuItem[];
   items2!: MenuItem[];
+
+  constructor(
+    public serviceLogin: LoginService
+  ){}
 
   ngOnInit() {
       this.items = [
@@ -98,5 +103,7 @@ export class OmegaMenuComponent implements OnInit {
     ];
   }
 
-
+  evento(){
+    this.serviceLogin.nome = ''
+  }
 }

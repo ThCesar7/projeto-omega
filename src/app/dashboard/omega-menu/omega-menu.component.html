@@ -1,6 +1,9 @@
 <div class="menu">
   <div class="icone">
     <i class="fa-solid fa-circle-user"></i>
+    <div>
+      <span class="nome">{{serviceLogin.nome}}</span>
+    </div>
     <div class="espacamento2">
       <span class="texto">Configurações</span>
       <div class="texto gear">
@@ -9,7 +12,7 @@
         </button>
         <mat-menu #menu2="matMenu" class="matMenu">
           <button mat-menu-item>Alterar Senha</button>
-          <button mat-menu-item [routerLink]="['/login']">Logout</button>
+          <button mat-menu-item [routerLink]="['/login']" (click)="evento()">Logout</button>
         </mat-menu>
       </div>
     </div>

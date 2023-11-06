@@ -26,8 +26,8 @@ mat-toolbar{
 
 .olho{
   position: relative;
-  top: -4px;
-  left: 20px;
+  top: -5px;
+  left: 12px;
   font-size: 0.8rem;
 }
 
@@ -36,9 +36,22 @@ mat-toolbar{
   left: 350px;
 }
 
+.boxWhite{
+  background: white;
+  height: 5px;
+  width: 75px;
+  margin: -2px 0 0 6px;
+  border-radius: 14px;
+}
+
 @media (min-width: 300px) and (max-width: 911px) {
   .texto{
     left: 50px;
+    font-size: 1.2rem;
+  }
+
+  .saldo{
+    right: 18px;
   }
 }
 
