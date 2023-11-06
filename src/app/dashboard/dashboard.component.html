@@ -4,14 +4,15 @@
   </div>
 
   <div class="header" [ngClass]="{'header-hidden': isMenuHidden}">
-    <button mat-raised-button class="burguer" (click)="evento()"><i class="fa-solid fa-bars"></i></button>
+    <button mat-raised-button class="burguer" [ngClass]="{'burguer-hidden': isMenuHidden}" (click)="evento()">
+      <i class="fa-solid fa-bars"></i>
+    </button>
 
     <header></header>
   </div>
 
-</div>
-
-<div class="dashboard" [ngClass]="{'dashboard-hidden': isMenuHidden}">
-  <conteudo class="conteudo" [ngClass]="{'conteudo-hidden': isMenuHidden}"></conteudo>
-  <img class="fundo" src="./assets/img/fundo.jpg">
+  <div class="dashboard" [ngClass]="{'dashboard-hidden': isMenuHidden}">
+    <div class="fundo"></div>
+    <conteudo class="conteudo" [ngClass]="{'conteudo-with-margin': !isMenuHidden, 'conteudo-without-margin': isMenuHidden}"></conteudo>
+  </div>
 </div>

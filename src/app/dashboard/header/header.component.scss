@@ -31,3 +31,25 @@ mat-toolbar{
   font-size: 0.8rem;
 }
 
+.texto{
+  position: relative;
+  left: 350px;
+}
+
+@media (min-width: 300px) and (max-width: 911px) {
+  .texto{
+    left: 50px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 911px) {
+  .texto{
+    left: 50px;
+  }
+}
+
+@media (min-width: 912px) and (max-width: 1024px) {
+  .texto{
+    left: 50px;
+  }
+}
